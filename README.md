@@ -81,4 +81,4 @@
 
 **🇷🇺** Если вы используете код из этого проекта, пожалуйста, укажите ссылку на оригинальный репозиторий.  
 **🇬🇧** If you use code from this project, please provide a link to the original repository.  
-
+       ссылка/link: `https://github.com/qqdelet/TimeTracker`
