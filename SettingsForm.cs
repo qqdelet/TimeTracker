@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Windows.Forms;
+using TimeTracker.Services;
 
 namespace TimeTracker
 {
     public partial class SettingsForm : Form
     {
         public bool AutoUpdateEnabled { get; private set; }
+        private readonly ConfigService _configService;
 
-        public SettingsForm(bool autoUpdateState)
+        public SettingsForm(ConfigService configService)
         {
             InitializeComponent();
-            checkBoxAutoUpdate.Checked = autoUpdateState;
+            _configService = configService;
+
+            checkBoxAutoUpdate.Checked = _configService.AutoUpdate;
+            checkBoxDarkMode.Checked = _configService.DarkMode;
         }
 
         private void checkBoxAutoUpdate_CheckedChanged(object sender, EventArgs e)
@@ -20,7 +25,8 @@ namespace TimeTracker
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK; // Закрываем форму и сохраняем состояние
+            _configService.SaveSettings(checkBoxAutoUpdate.Checked, checkBoxDarkMode.Checked);
+            DialogResult = DialogResult.OK;
             Close();
         }
         public bool DarkModeEnabled { get; private set; }

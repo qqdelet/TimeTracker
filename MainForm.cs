@@ -15,21 +15,31 @@ namespace TimeTracker
         private readonly System.Windows.Forms.Timer _refreshTimer;
         private readonly BindingSource _bindingSource; // ✅ Для сортировки
         private bool _autoUpdateEnabled = false; // ✅ Теперь храним в переменной
+        private readonly ConfigService _configService;
+
         public MainForm()
         {
             InitializeComponent();
             _tracker = new ProcessTracker();
             _dbService = new DatabaseService();
             _bindingSource = new BindingSource();
+            _configService = new ConfigService(); // ✅ Загружаем настройки
 
-            processGridView.DataSource = _bindingSource; // ✅ Привязываем источник данных
-            LoadProcessData();
+            _autoUpdateEnabled = _configService.AutoUpdate;
+            _darkModeEnabled = _configService.DarkMode;
 
+            // ✅ Создаём таймер перед вызовом UpdateAutoUpdateState()
             _refreshTimer = new System.Windows.Forms.Timer();
             _refreshTimer.Interval = 5000;
             _refreshTimer.Tick += RefreshData;
-            _refreshTimer.Start();
+
+            ApplyTheme();
+            UpdateAutoUpdateState(); // ✅ Теперь _refreshTimer не null
+
+            LoadProcessData(); // ✅ Загружаем данные при старте
         }
+
+
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -39,12 +49,22 @@ namespace TimeTracker
         private void LoadProcessData()
         {
             List<ProcessUsage> data = _dbService.GetProcessUsages();
-            _bindingSource.DataSource = new SortableBindingList<ProcessUsage>(data); // ✅ Теперь сортировка работает
+
+            if (data == null || data.Count == 0)
+            {
+                processGridView.DataSource = null; // ✅ Очищаем таблицу, если данных нет
+                return;
+            }
+
+            _bindingSource.DataSource = new SortableBindingList<ProcessUsage>(data); // ✅ Убедимся, что сортировка работает
+            processGridView.DataSource = _bindingSource; // ✅ Явно указываем источник данных
 
             foreach (DataGridViewColumn column in processGridView.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.Automatic; // ✅ Включаем сортировку
             }
+
+            processGridView.Refresh(); // ✅ Обновляем `DataGridView`
         }
 
         public void label1_Click(object sender, EventArgs e)
@@ -102,14 +122,16 @@ namespace TimeTracker
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            using (SettingsForm settings = new SettingsForm(_autoUpdateEnabled, _darkModeEnabled))
+            using (SettingsForm settings = new SettingsForm(_configService))
             {
                 if (settings.ShowDialog() == DialogResult.OK)
                 {
-                    _autoUpdateEnabled = settings.AutoUpdateEnabled;
-                    _darkModeEnabled = settings.DarkModeEnabled;
+                    _autoUpdateEnabled = _configService.AutoUpdate;
+                    _darkModeEnabled = _configService.DarkMode;
+
                     UpdateAutoUpdateState();
-                    ApplyTheme(); // ✅ Применяем тему
+                    ApplyTheme();
+                    LoadProcessData(); // ✅ Перезагружаем данные после изменения настроек
                 }
             }
         }

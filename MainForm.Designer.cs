@@ -71,7 +71,7 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.ForeColor = Color.IndianRed;
-            lblStatus.Location = new Point(753, 335);
+            lblStatus.Location = new Point(753, 353);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(117, 15);
             lblStatus.TabIndex = 3;

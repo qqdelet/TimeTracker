@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\timetracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:timetracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|solutionrelative:settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8BF958E7-CB70-4A17-A500-F049084AA1DD}|TimeTracker.csproj|c:\\users\\wayne\\source\\repos\\winformsapp1\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +50,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "ConfigService.cs",
+              "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\Services\\ConfigService.cs",
+              "RelativeDocumentMoniker": "Services\\ConfigService.cs",
+              "ToolTip": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\Services\\ConfigService.cs",
+              "RelativeToolTip": "Services\\ConfigService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T05:03:01.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeTracker",
+              "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\TimeTracker.csproj",
+              "RelativeDocumentMoniker": "TimeTracker.csproj",
+              "ToolTip": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\TimeTracker.csproj",
+              "RelativeToolTip": "TimeTracker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T04:45:25.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SettingsForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\SettingsForm.Designer.cs",
               "RelativeDocumentMoniker": "SettingsForm.Designer.cs",
@@ -59,20 +93,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "SettingsForm.cs",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\SettingsForm.cs",
               "RelativeDocumentMoniker": "SettingsForm.cs",
               "ToolTip": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\SettingsForm.cs",
               "RelativeToolTip": "SettingsForm.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAswB8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T04:13:06.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SettingsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\SettingsForm.cs",
               "RelativeDocumentMoniker": "SettingsForm.cs",
@@ -84,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SortableBindingList.cs",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\SortableBindingList.cs",
               "RelativeDocumentMoniker": "SortableBindingList.cs",
@@ -103,14 +137,14 @@
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAADgv6EAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAADgv4AAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T01:06:24.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
@@ -123,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -135,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ProcessTracker.cs",
               "DocumentMoniker": "C:\\Users\\Wayne\\source\\repos\\WinFormsApp1\\Services\\ProcessTracker.cs",
               "RelativeDocumentMoniker": "Services\\ProcessTracker.cs",
