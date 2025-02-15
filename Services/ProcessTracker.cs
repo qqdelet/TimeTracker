@@ -17,12 +17,9 @@ namespace TimeTracker
             _timer = new System.Timers.Timer(5000); // Проверять процессы каждые 5 секунд
             _timer.Elapsed += CheckProcesses;
         }
-
         public void StartTracking()
         {
-            _runningProcesses.Clear(); // Очищаем список, если он был заполнен раньше
-
-            // Сохраняем уже запущенные процессы
+            _runningProcesses.Clear();
             var processes = Process.GetProcesses()
                                    .Where(p => !string.IsNullOrEmpty(p.ProcessName))
                                    .Select(p => new { p.Id, p.ProcessName })
@@ -33,12 +30,11 @@ namespace TimeTracker
                 if (!_runningProcesses.ContainsKey(process.Id))
                 {
                     _runningProcesses[process.Id] = (process.ProcessName, DateTime.Now);
-                    Console.WriteLine($"Запуск: {process.ProcessName}");
+                    Console.WriteLine($"Процесс уже работал: {process.ProcessName} (ID: {process.Id})");
                 }
             }
 
             _timer.Start();
-            Console.WriteLine("Трекер процессов запущен...");
         }
 
         public void StopTracking()

@@ -41,3 +41,4 @@ C:\Users\Wayne\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\refint\TimeTra
 C:\Users\Wayne\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\TimeTracker.pdb
 C:\Users\Wayne\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\TimeTracker.genruntimeconfig.cache
 C:\Users\Wayne\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\ref\TimeTracker.dll
+C:\Users\Wayne\source\repos\WinFormsApp1\obj\Debug\net8.0-windows\TimeTracker.SettingsForm.resources

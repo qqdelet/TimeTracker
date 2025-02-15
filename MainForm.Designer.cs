@@ -32,22 +32,26 @@
             btnStart = new Button();
             btnStop = new Button();
             lblStatus = new Label();
+            btnSettings = new Button();
             ((System.ComponentModel.ISupportInitialize)processGridView).BeginInit();
             SuspendLayout();
             // 
             // processGridView
             // 
-            processGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            processGridView.AllowDrop = true;
+            processGridView.AllowUserToOrderColumns = true;
             processGridView.Location = new Point(1, 0);
             processGridView.Name = "processGridView";
-            processGridView.Size = new Size(846, 300);
+            processGridView.Size = new Size(746, 368);
+            processGridView.StandardTab = true;
             processGridView.TabIndex = 0;
+            processGridView.CellContentClick += processGridView_CellContentClick;
             // 
             // btnStart
             // 
-            btnStart.Location = new Point(12, 320);
+            btnStart.Location = new Point(753, 12);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(75, 23);
+            btnStart.Size = new Size(117, 23);
             btnStart.TabIndex = 1;
             btnStart.Text = "Старт";
             btnStart.UseVisualStyleBackColor = true;
@@ -55,9 +59,9 @@
             // 
             // btnStop
             // 
-            btnStop.Location = new Point(100, 320);
+            btnStop.Location = new Point(753, 41);
             btnStop.Name = "btnStop";
-            btnStop.Size = new Size(75, 23);
+            btnStop.Size = new Size(117, 23);
             btnStop.TabIndex = 2;
             btnStop.Text = "Стоп";
             btnStop.UseVisualStyleBackColor = true;
@@ -67,28 +71,43 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.ForeColor = Color.IndianRed;
-            lblStatus.Location = new Point(720, 320);
+            lblStatus.Location = new Point(753, 335);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(117, 15);
             lblStatus.TabIndex = 3;
             lblStatus.Text = "Трекер: Остановлен";
             lblStatus.Click += label1_Click;
             // 
+            // btnSettings
+            // 
+            btnSettings.Location = new Point(753, 70);
+            btnSettings.Name = "btnSettings";
+            btnSettings.Size = new Size(117, 23);
+            btnSettings.TabIndex = 5;
+            btnSettings.Text = "Настройки";
+            btnSettings.UseVisualStyleBackColor = true;
+            btnSettings.Click += btnSettings_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(849, 361);
+            ClientSize = new Size(877, 380);
             Controls.Add(lblStatus);
             Controls.Add(processGridView);
             Controls.Add(btnStart);
             Controls.Add(btnStop);
+            Controls.Add(btnSettings);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "MainForm";
+            ShowInTaskbar = false;
             Text = "Time Tracker";
             Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)processGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
         }
 
         #endregion
@@ -97,5 +116,6 @@
         private Button btnStart;
         private Button btnStop;
         private Label lblStatus;
+
     }
 }
