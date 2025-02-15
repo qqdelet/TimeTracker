@@ -64,5 +64,5 @@
 ## 🔧 Установка | Installation
 ### ⬇️ **1. Скачать репозиторий | Download the repository**
 ```sh
-git clone https://github.com/your-username/TimeTracker.git
+git clone https://github.com/qqdelet/TimeTracker.git
 cd TimeTracker
